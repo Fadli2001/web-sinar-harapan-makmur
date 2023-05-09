@@ -47,11 +47,11 @@ export default class TopCarProduct extends Component {
                     </div>
                     <div className="row">
                         {
-                            services.map((s) => (
-                                <div className="col-xl-3 col-md-6 d-flex align-items-stretch">
+                            services.map((s,e) => (
+                                <div className="col-xl-3 col-md-6 d-flex align-items-stretch" key={e}>
                                     <div className="card border-0 card-car" style={{ width: ' 18rem' }}>
                                         <img src={s.image} className="card-img-top" alt="..." />
-                                        <div className="card-body">
+                                         <div className="card-body">
                                             <h6>{s.title}</h6>
                                             <span>{s.desc} | <strong className="badge text-bg-success">{s.status}</strong> </span>
                                             <p className="card-text text-danger">Rp {s.price}</p>
