@@ -15,7 +15,7 @@ export default class Contact extends Component {
             success: !this.state.success
         })
     }
-
+    
     render() {
         return (
             <>
@@ -32,7 +32,7 @@ export default class Contact extends Component {
                         </div>
                     </div>
                 </section>
-                <Modal title='Form Pengajuan'>
+                <Modal title='Form Pengajuan' onExited={this.handleModalExited}>
                     {this.state.success === true ? `Terima kasih ${this.state.message.fullName} atas pengaduannya!` : <ContactForm onFormSubmit={this.handleFormSubmit} />}
                 </Modal>
             </>
