@@ -7,13 +7,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.wrapper {
+.wrapper-admin {
     height: 100%;
     width: 300px;
     position: relative;
 }
 
-.wrapper .menu-btn {
+.wrapper-admin .menu-btn {
     position: absolute;
     left: 20px;
     top: 10px;
@@ -35,13 +35,13 @@
     left: 247px;
 }
 
-.wrapper .menu-btn i {
+.wrapper-admin .menu-btn i {
     position: absolute;
     font-size: 23px;
     transition: all 0.3s ease;
 }
 
-.wrapper .menu-btn i.fa-times {
+.wrapper-admin .menu-btn i.fa-times {
     opacity: 0;
 }
 
@@ -55,7 +55,7 @@
     transform: rotate(180deg);
 } */
 
-#sidebar {
+#sidebar-admin {
     position: fixed;
     background: #404040;
     height: 100%;
@@ -66,11 +66,11 @@
     left: 0;
 }
 
-#btn:checked~#sidebar {
+#btn:checked~#sidebar-admin {
     left: 0;
 }
 
-#sidebar .title {
+#sidebar-admin .title {
     line-height: 65px;
     text-align: center;
     background: #172641;
@@ -80,7 +80,7 @@
     border-bottom: 1px solid #222;
 }
 
-#sidebar .list-items {
+#sidebar-admin .list-items-adm-nav {
     position: relative;
     background: #172641;
     width: 100%;
@@ -88,23 +88,23 @@
     list-style: none;
 }
 
-#sidebar .list-items li {
+#sidebar-admin .list-items-adm-nav li {
     line-height: 50px;
     border-top: 1px solid #0a1323;
     border-bottom: 1px solid #0a1323;
     transition: all 0.3s ease;
 }
 
-#sidebar .list-items li:hover {
+#sidebar-admin .list-items-adm-nav li:hover {
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
 }
 
-#sidebar .list-items li:first-child {
+#sidebar-admin .list-items-adm-nav li:first-child {
     border-top: none;
 }
 
-#sidebar .list-items li a {
+#sidebar-admin .list-items-adm-nav li a {
     color: #f2f2f2;
     text-decoration: none;
     font-size: 18px;
@@ -114,11 +114,11 @@
     display: block;
 }
 
-#sidebar .list-items li a i {
+#sidebar-admin .list-items-adm-nav li a i {
     margin-right: 20px;
 }
 
-#sidebar .list-items .icons {
+#sidebar-admin .list-items-adm-nav .icons {
     width: 100%;
     height: 40px;
     text-align: center;
@@ -130,7 +130,7 @@
     justify-content: center;
 }
 
-#sidebar .list-items .icons a {
+#sidebar-admin .list-items-adm-nav .icons a {
     height: 100%;
     width: 40px;
     display: block;
@@ -143,15 +143,15 @@
     transition: all 0.3s ease;
 }
 
-#sidebar .list-items .icons a:hover {
+#sidebar-admin .list-items-adm-nav .icons a:hover {
     background: #404040;
 }
 
-.list-items .icons a:first-child {
+.list-items-adm-nav .icons a:first-child {
     margin-left: 0px;
 }
 
-.content {
+.content-admin {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -162,12 +162,12 @@
     padding:0 20em;
 }
 
-.content .header {
+.content-admin .header {
     font-size: 45px;
     font-weight: 700;
 }
 
-.content p {
+.content-admin p {
     font-size: 40px;
     font-weight: 700;
 }

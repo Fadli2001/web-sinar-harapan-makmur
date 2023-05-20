@@ -2,7 +2,7 @@ import VehicleTable from "./vehicle/Vehicle"
 
 const Content = () => {
     return (
-        <div className="content">
+        <div className="content-admin">
            <VehicleTable/>
         </div>
     )

@@ -7,7 +7,7 @@ const Navigation = () => {
             <div className="wrapper">   
                 <nav id="sidebar">
                     <div className="title">Side Menu</div>
-                    <ul className="list-items">
+                    <ul className="list-items-adm-nav">
                         <li><a href="#"><i className="fas fa-home"></i>Dashboard</a></li>
                         <li><a href="#"><i className="fas fa-home"></i>Vehicle</a></li>
                         <li><a href="#"><i className="fas fa-home"></i>Brand</a></li>

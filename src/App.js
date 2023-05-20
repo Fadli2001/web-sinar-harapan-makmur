@@ -5,8 +5,8 @@ import Layout from './pages/user/ui';
 function App() {
   return (
     <>
-      {/* <Layout /> */}
-      <Navigation/>  
+      <Layout />
+      {/* <Navigation/>   */}
     </>
   );
 }
