@@ -1,8 +1,6 @@
-import React, { Component } from 'react'
 import CarSvg from '../../asset/img/car.svg'
 
-export default class Hero extends Component {
-    render() {
+const Hero = () => {
         return (
             <section id="hero" className="d-flex align-items-center">
                 <div className="container">
@@ -20,5 +18,7 @@ export default class Hero extends Component {
                 </div>
             </section>
         )
-    }
 }
+
+
+export default Hero

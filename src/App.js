@@ -1,9 +1,10 @@
 import Layout from './ui';
 
+
 function App() {
   return (
     <>
-      <Layout/>
+      <Layout />
     </>
   );
 }

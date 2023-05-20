@@ -1,16 +1,15 @@
-import React, { Component } from 'react'
-import Navbar from '../components/navbar'
 import '../asset/global.css'
-import Home from '../pages/home'
+import Navbar from '../components/navbar'
+import Home from '../pages/home/Index'
 
 
-export default class Layout extends Component {
-  render() {
-    return (
-      <>            
-        <Navbar/>
-        <Home/>
-      </>
-    )
-  }
+const Layout = () => {
+  return (
+    <>
+      <Navbar />
+      <Home />
+    </>
+  )
 }
+
+export default Layout
