@@ -1,10 +1,12 @@
-import Layout from './ui';
+import Navigation from './pages/admin/home/Navigation';
+import Layout from './pages/user/ui';
 
 
 function App() {
   return (
     <>
-      <Layout />
+      {/* <Layout /> */}
+      <Navigation/>  
     </>
   );
 }

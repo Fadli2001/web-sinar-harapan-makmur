@@ -5,7 +5,7 @@ import About from './About'
 import CreditInform from './CreditInform'
 import TopCarProduct from './TopCarProduct'
 import Contact from './Contact'
-import Footer from '../../components/footer'
+import Footer from '../components/footer'
 
 const Home = () => {
 

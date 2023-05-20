@@ -1,6 +1,6 @@
-import '../asset/global.css'
+import '../../../asset/global.css'
 import Navbar from '../components/navbar'
-import Home from '../pages/home/Index'
+import Home from '../home/Index'
 
 
 const Layout = () => {

@@ -4,7 +4,7 @@ import {
     IgLogo,
     WaLogo,
     TwitterLogo
-} from '../../asset/img'
+} from '../../../../asset/img'
 
 const Footer = () => {
 

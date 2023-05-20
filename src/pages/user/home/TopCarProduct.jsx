@@ -1,4 +1,4 @@
-import Car from '../../asset/img/clients/car.jpg'
+import Car from '../../../asset/img/clients/car.jpg'
 
 const TopCarProduct = () => {
     const services = [

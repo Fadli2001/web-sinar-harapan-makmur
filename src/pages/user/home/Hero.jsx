@@ -1,4 +1,4 @@
-import CarSvg from '../../asset/img/car.svg'
+import CarSvg from '../../../asset/img/car.svg'
 
 const Hero = () => {
         return (

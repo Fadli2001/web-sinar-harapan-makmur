@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import StepCredits from '../../asset/img/step-credits.svg'
+import StepCredits from '../../../asset/img/step-credits.svg'
 
 const CreditInform = () => {
     const stepCreditInfo = {

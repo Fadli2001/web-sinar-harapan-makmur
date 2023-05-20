@@ -1,6 +1,6 @@
 // import { HondaLogo, LexusLogo, MazdaLogo, MercedesLogo, NissanLogo, ToyotaLogo } from '../../../asset/img/clients'
 
-import { HondaLogo, LexusLogo, MazdaLogo, MercedesLogo, NissanLogo, ToyotaLogo } from "../../asset/img/clients"
+import { HondaLogo, LexusLogo, MazdaLogo, MercedesLogo, NissanLogo, ToyotaLogo } from "../../../asset/img/clients"
 
 
 const Brand = () => {
