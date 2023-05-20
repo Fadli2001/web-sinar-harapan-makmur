@@ -10,7 +10,7 @@ const Navbar = () => {
                         <li className="dropdown"><a href="#"><span>Mobil</span> <i className="bi bi-chevron-down"></i></a>
                             <ul>
                                 <li><a href="#">Baru</a></li>
-                                <li><a href="#">Bekas</a></li>
+                                <li><a href="#">Bekas</a></li>  
                             </ul>
                         </li>
                         <li><a className="nav-link scrollto" href="#contact">Contact</a></li>

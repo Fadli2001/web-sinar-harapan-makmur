@@ -31,14 +31,12 @@ const CreditInform = () => {
             <div className="container-fluid" data-aos="fade-up">
                 <div className="row">
                     <div className="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-
                         <div className="content">
                             <h3>Alur <strong>Pengajuan Credit</strong> Mobil Baru atau Bekas  </h3>
                             <p>
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum sed quo id consequuntur cumque facilis sit velit, rerum, eligendi beatae veritatis culpa error minus! Fugit sint molestias unde facere accusamus?
                             </p>
                         </div>
-
                         <div className="accordion-list">
                             <ul>
                                 {
@@ -58,12 +56,9 @@ const CreditInform = () => {
                                 }
                             </ul>
                         </div>
-
                     </div>
-
                     <div className="col-lg-5 align-items-stretch order-1 order-lg-2 img" style={{ backgroundImage: `url(${StepCredits})` }}></div>
                 </div>
-
             </div>
         </section>
     );
