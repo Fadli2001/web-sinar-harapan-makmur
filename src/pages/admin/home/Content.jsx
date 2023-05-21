@@ -1,11 +1,10 @@
 import VehicleTable from "./vehicle/Vehicle"
-import AppV from "./vehicle/VehicleListAxios"
+import AppV from "./vehicle/VehicleAxios"
 
 const Content = () => {
     return (
         <div className="content-admin">
-           <VehicleTable/>
-           {/* <AppV/> */}
+           <VehicleTable/>           
         </div>
     )
 }

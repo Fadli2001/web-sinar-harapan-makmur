@@ -1,9 +1,13 @@
 import { useEffect, useState } from "react"
 import vehicleList from "./vehicleList"
-import { getVehicles } from "./VehicleListAxios"
+import { getVehicles, postVehicle } from "./VehicleAxios"
 
 const VehicleTable = () => {
     const [vehicles,setVehicles] = useState([])
+
+    const handleAdd = () => {
+        postVehicle()
+    }
     
     useEffect(() => {
         getVehicles(setVehicles)
@@ -16,7 +20,7 @@ const VehicleTable = () => {
                 <div className="row">
                     <div className="col-md-12">
                         <div>
-                            <button className="btn btn-primary mb-2">Add +</button>
+                            <button className="btn btn-primary mb-2" onClick={handleAdd}>Add +</button>
                         </div>
                         <table className="table table-striped table-hover border ">
                             <thead>
