@@ -1,3 +1,5 @@
 export const SERVICE = {
-    Login : '/login'   
+    LOGIN : '/login',
+    VEHICLE : '/vehicles'
 }
+

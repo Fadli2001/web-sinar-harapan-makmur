@@ -19,7 +19,7 @@ const Navbar = () => {
                         </li>
                         <li><a className="nav-link scrollto" href="#contact">Contact</a></li>
                         <li><a className="nav-link scrollto" href="" onClick={() => {
-                            navigate(SERVICE.Login)
+                            navigate(SERVICE.LOGIN)
                         }}>SigIn</a></li>
                     </ul>
                     <i className="bi bi-list mobile-nav-toggle"></i>

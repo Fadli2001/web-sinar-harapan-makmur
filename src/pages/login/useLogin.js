@@ -12,10 +12,7 @@ const useLogin = () => {
     }
 
     const handleLogin = () => {
-        // let isValidLogin = userCred.username == 'admin' && userCred.password == 'password'
-        // if (isValidLogin) {
             login()
-        // }
     }
 
     return {

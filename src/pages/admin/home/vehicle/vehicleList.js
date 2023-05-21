@@ -20,7 +20,6 @@ const vehicles = [
         status : 'New',
         SalePrice : 191000000
     },
-
 ]
 
 export default vehicles
