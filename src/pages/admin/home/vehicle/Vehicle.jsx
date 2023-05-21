@@ -10,7 +10,7 @@ const VehicleTable = () => {
                         <div>
                             <button className="btn btn-primary mb-2">Add +</button>
                         </div>
-                        <table class="table table-striped table-hover border ">
+                        <table className="table table-striped table-hover border ">
                             <thead>
                                 <tr>
                                     <th scope="col">No</th>

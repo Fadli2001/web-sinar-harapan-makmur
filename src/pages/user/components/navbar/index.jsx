@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom"
+import { SERVICE } from "../../../../routers/pathConstant"
+
 const Navbar = () => {
+    const navigate = useNavigate()
     return (
         <header id="header" className="fixed-top bg-navbar-fixed">
             <div className="container d-flex align-items-center">
@@ -14,7 +18,9 @@ const Navbar = () => {
                             </ul>
                         </li>
                         <li><a className="nav-link scrollto" href="#contact">Contact</a></li>
-                        <li><a className="nav-link scrollto" href="#contact">SigIn</a></li>
+                        <li><a className="nav-link scrollto" href="" onClick={() => {
+                            navigate(SERVICE.Login)
+                        }}>SigIn</a></li>
                     </ul>
                     <i className="bi bi-list mobile-nav-toggle"></i>
                 </nav>

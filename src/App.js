@@ -1,12 +1,17 @@
-import Navigation from './pages/admin/home/Navigation';
-import Layout from './pages/user/ui';
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from './routers/AppRouter';
+import '../src/asset/global.css'
+import { AuthProvider } from './context/AuthContext';
 
 
 function App() {
   return (
     <>
-      <Layout />
-      {/* <Navigation/>   */}
+      <BrowserRouter>
+        <AuthProvider>
+          <AppRouter />
+        </AuthProvider>
+      </BrowserRouter>
     </>
   );
 }

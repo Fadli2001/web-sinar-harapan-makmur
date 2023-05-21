@@ -1,4 +1,4 @@
-import '../../../asset/global.css'
+
 import Navbar from '../components/navbar'
 import Home from '../home/Index'
 
