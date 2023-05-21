@@ -1,7 +1,46 @@
-import { useAuth } from "../../hooks/UseAuth"   
+import { useState } from "react"
+import { useAuth } from "../../hooks/UseAuth"
 
 const LoginView = () => {
     const { login } = useAuth()
+    const [formData, setFormData] = useState(
+        {
+            username: '',
+            password: '',
+            errPassword: '',
+            isValid: false
+        }
+    )
+
+    const onInputUsernameChange = (e) => {
+        setFormData({
+            ...formData,
+            username: e.target.value
+        })
+    }
+
+    const onInputPasswordChange = (e) => {
+        setFormData({
+            ...formData,
+            password: e.target.value
+        })
+    }
+
+
+    const onLoginSubmit = (e) => {
+        e.preventDefault()
+        let errMessage = ''
+        if (formData.username !== 'admin123' || formData.password !== '123') {
+            errMessage += 'Incorrect login credentials'
+        }
+        if (errMessage) {
+            alert(errMessage);
+            return;
+        }
+        login()
+    }
+
+
     return (
         <>
             <div className="vh-100 d-flex justify-content-center align-items-center">
@@ -17,24 +56,24 @@ const LoginView = () => {
                                         <div className="mb-3">
                                             <label htmlFor="username" className="form-label ">Email address</label>
                                             <input type="username" className="form-control" id="username"
-                                                
+                                                onChange={onInputUsernameChange} required
                                             />
                                         </div>
                                         <div className="mb-3">
                                             <label htmlFor="password" className="form-label ">Password</label>
                                             <input type="password" className="form-control" id="password" placeholder="*******"
-                                                
-                                            />
+                                                onChange={onInputPasswordChange} required
+                                            />                                            
                                         </div>
                                         <p className="small"><a className="text-primary" href="forget-password.html">Forgot password?</a></p>
                                         <div className="d-grid">
                                             <button className="btn btn-outline-primary" type="submit"
-                                                onClick={() => login()}
+                                                onClick={onLoginSubmit}
                                             >Login</button>
                                         </div>
                                     </form>
                                     <div>
-                                        <p className="mb-0  text-center">Don't have an account? <a href="signup.html"
+                                        <p className="mb-0  text-center">Don't have an account? <a
                                             className="text-primary fw-bold">Sign
                                             Up</a></p>
                                     </div>
