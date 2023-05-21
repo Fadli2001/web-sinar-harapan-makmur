@@ -4,8 +4,8 @@ import AppV from "./vehicle/VehicleListAxios"
 const Content = () => {
     return (
         <div className="content-admin">
-           {/* <VehicleTable/> */}
-           <AppV/>
+           <VehicleTable/>
+           {/* <AppV/> */}
         </div>
     )
 }

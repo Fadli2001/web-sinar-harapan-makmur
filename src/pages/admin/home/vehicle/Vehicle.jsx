@@ -1,7 +1,15 @@
+import { useEffect, useState } from "react"
 import vehicleList from "./vehicleList"
+import { getVehicles } from "./VehicleListAxios"
 
 const VehicleTable = () => {
-    const vehicles = vehicleList
+    const [vehicles,setVehicles] = useState([])
+    
+    useEffect(() => {
+        getVehicles(setVehicles)
+        console.log('table ',vehicles);
+    },[])
+
     return (
         <>
             <div className="container">
@@ -29,7 +37,7 @@ const VehicleTable = () => {
                                             <td>{vehicle.model}</td>
                                             <td>{vehicle.isAutomatic ? 'True' : 'False'}</td>
                                             <td>{vehicle.status}</td>
-                                            <td>{vehicle.SalePrice}</td>
+                                            <td>{vehicle.salePrice}</td>
                                             <td>
                                                 <button className="btn btn-primary">Detail</button>
                                                 <button className="btn btn-warning mx-2">Update</button>
