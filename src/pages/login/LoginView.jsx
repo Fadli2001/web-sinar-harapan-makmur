@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useAuth } from "../../hooks/UseAuth"
+import { getToken, getTokenPromise } from "./loginService"
 
 const LoginView = () => {
     const { login } = useAuth()
@@ -29,15 +30,16 @@ const LoginView = () => {
 
     const onLoginSubmit = (e) => {
         e.preventDefault()
-        let errMessage = ''
-        if (formData.username !== 'admin123' || formData.password !== '123') {
-            errMessage += 'Incorrect login credentials'
-        }
-        if (errMessage) {
-            alert(errMessage);
-            return;
-        }
-        login()
+        getTokenPromise(formData)
+            .then(res => {
+                console.log(res.data);
+                sessionStorage.setItem('token', res.data.token);
+                login()
+            })
+            .catch(err => {
+                alert('Invalid Username or Password')
+                // console.log('Error:', err);
+            });
     }
 
 
@@ -63,7 +65,7 @@ const LoginView = () => {
                                             <label htmlFor="password" className="form-label ">Password</label>
                                             <input type="password" className="form-control" id="password" placeholder="*******"
                                                 onChange={onInputPasswordChange} required
-                                            />                                            
+                                            />
                                         </div>
                                         <p className="small"><a className="text-primary" href="forget-password.html">Forgot password?</a></p>
                                         <div className="d-grid">
