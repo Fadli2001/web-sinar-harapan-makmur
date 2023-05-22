@@ -16,21 +16,30 @@ const getVehicles = (setState) => {
 }
 
 const postVehicle = () => {
+    const formData = new FormData();
+
     const newVehicle = JSON.stringify({
         brandId: "e4fb8f3f-0963-4d00-900c-80b4e6629694",
-        model: "Innova Zenix AT",
-        productionYear: 2023,
-        color: "Hitam",
+        model: "Mercedes-Benz",
+        productionYear: 2022,
+        color: "Putih",
         isAutomatic: true,
-        stock: 10,
-        salePrice: 435000000,
+        stock: 13,
+        salePrice: 540000000,
         status: "baru"
     })
-    const formData = new FormData();
     formData.append('vehicle', newVehicle);
+
+    const file = new File(['file content'], 'example.txt');
+    formData.append('file', file);
+
+    const token = sessionStorage.getItem('token');
+    console.log(token);
     client.post('/', formData, {
         headers: {
-            'Content-Type': 'multipart/form-data'
+            'Content-Type': 'multipart/form-data',
+            'Authorization': `Bearer ${token}`,
+            // 'a' : '123'
         }
     })
         .then(res => console.log(res))
